@@ -1,0 +1,27 @@
+{
+  "name": "html-require-loader",
+  "version": "1.0.0",
+  "description": "Webpack loader for including requiring other HTML files with a <require> tag.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngokevin/html-require-loader.git"
+  },
+  "keywords": [
+    "webpack",
+    "loader"
+  ],
+  "author": "Kevin Ngo <kevin@supermedium.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ngokevin/html-require-loader/issues"
+  },
+  "homepage": "https://github.com/ngokevin/html-require-loader#readme",
+  "dependencies": {
+    "loader-utils": "^1.2.3"
+  },
+  "devDependencies": {
+    "memory-fs": "^0.4.1",
+    "webpack": "^4.29.5"
+  }
+}
