@@ -64,8 +64,8 @@ And then requiring or including other HTML files.
   <h1 id="foo"></h1>
   <h2 id="bar"></h2>
 
-  <require path="baz.html">
-  <require path="templates/qux.html">
+  <require path="baz.html"></require>
+  <require path="templates/qux.html"></require>
 </body>
 ```
 

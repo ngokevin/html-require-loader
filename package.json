@@ -1,6 +1,6 @@
 {
   "name": "html-require-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Webpack loader for including requiring other HTML files with a <require> tag.",
   "main": "index.js",
   "repository": {
