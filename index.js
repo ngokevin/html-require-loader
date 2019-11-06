@@ -17,7 +17,7 @@ module.exports = function (source) {
     let requireSource = fs.readFileSync(requirePath, 'utf8');
     requires.push(requirePath);
 
-    source = source.replace(match[0], `<!-- <require path="${requirePath}"> -->
+    source = source.replace(match[0], `<!-- <require path="${options.markerPrefix ? options.markerPrefix + match[1].trim() : requirePath}"> -->
 ${requireSource}<!-- </require> -->`);
   }
 

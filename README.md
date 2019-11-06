@@ -22,9 +22,10 @@ npm install --save html-require-loader
 
 #### Configuration
 
-| Option | Description                      | Default                          |
-|--------|----------------------------------|----------------------------------|
-| root   | Root path to look for templates. | Same path as required HTML file. |
+| Option         | Description                         | Default                          |
+|----------------|-------------------------------------|----------------------------------|
+| root           | Root path to look for templates.    | Same path as required HTML file. |
+| markerPrefix   | Prefix override for comment marker. | Same path as required HTML file. |
 
 ```js
 var path = require('path');
@@ -40,7 +41,8 @@ module.exports = {
           {
             loader: 'html-require-loader',
             options: {
-              root: path.resolve(__dirname, 'src')
+              root: path.resolve(__dirname, 'src'),
+              markerPrefix: '/path/to/file'
             }
           }
         ]
