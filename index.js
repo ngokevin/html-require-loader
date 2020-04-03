@@ -17,7 +17,11 @@ module.exports = function (source) {
     let requireSource = fs.readFileSync(requirePath, 'utf8');
     requires.push(requirePath);
 
-    source = source.replace(match[0], `<!-- <require path="${requirePath}"> -->
+    // Escape windows backslashes to fix a
+    // `Bad escape sequence in untagged template literal` error
+    let escapedRequirePath = requirePath.replace(/\\/g, "\\\\")
+
+    source = source.replace(match[0], `<!-- <require path="${escapedRequirePath}"> -->
 ${requireSource}<!-- </require> -->`);
   }
 
